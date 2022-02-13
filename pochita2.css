@@ -1,0 +1,636 @@
+body {
+  background: rgb(255, 187, 0);
+  background: radial-gradient(
+    circle,
+    rgba(255, 187, 0, 1) 0%,
+    rgba(2, 0, 36, 1) 100%
+  );
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+h2 {
+  position: absolute;
+  color: rgb(255, 251, 0);
+  font-family: "Copperplate", "Papyrus", Fantasy;
+  margin-bottom: 666px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cabeza {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: orange;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+}
+
+.nalga {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: orange;
+  margin-left: -50px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+}
+.cola {
+  width: 125px;
+  height: 25px;
+  border-radius: 0 0 100% 0;
+  border-bottom: solid 80px black;
+  transform: rotate(-55deg);
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  margin-top: -90px;
+  margin-right: -100px;
+}
+
+.cola::after {
+  content: "";
+  position: absolute;
+  width: 125px;
+  height: 25px;
+  border-radius: 0 0 100% 0;
+  border-bottom: solid 70px orange;
+  margin-right: 10px;
+  margin-top: 5px;
+  transform: rotate(1deg);
+}
+
+.punta {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid 5px black;
+  transform: rotate(54deg);
+  clip-path: circle(50% at 50% 0%);
+  position: absolute;
+  margin-top: -100px;
+  margin-right: 20px;
+}
+
+.puntaA {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 75px solid black;
+  border-right: 50px solid transparent;
+  border-left: 50px solid transparent;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin-top: -160px;
+  margin-right: 170px;
+  transform: rotate(75deg);
+}
+
+.puntaB {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-top: 50px solid white;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin-top: -145px;
+  margin-right: 180px;
+  transform: rotate(75deg);
+}
+
+.hagarreC {
+  width: 200px;
+  height: 25px;
+  background: black;
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 250px;
+}
+.hagarreC::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 25px;
+  margin-top: -130px;
+  margin-left: 10px;
+  background: black;
+  transform: rotate(30deg);
+}
+.hagarreC::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 35px;
+  background: black;
+  margin-top: -50px;
+  margin-left: 132px;
+  transform: rotate(90deg);
+}
+.cortec {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: orange;
+  margin-top: -200px;
+  margin-left: -176px;
+}
+.cortec::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: 110px;
+  margin-left: -5px;
+  background-color: orange;
+}
+.cortec::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 0% 100% 100% 0% / 0% 100% 100% 0%;
+  background-color: orange;
+  margin-left: 0px;
+}
+/* DIME QUE ESTAS ORGULLOSO SHIFU!!*/
+.cabeza::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: black;
+  margin-top: 50px;
+  margin-left: 150px;
+  box-shadow: 0px -150px 0 0 black;
+}
+.cabeza::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 150px;
+  background: black;
+  margin-top: -70px;
+  margin-left: 150px;
+}
+
+.ojo {
+  background: white;
+  border-radius: 50%;
+  border: 5px solid black;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: -40px;
+}
+
+.ojo::before {
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: black;
+  margin-bottom: 5px;
+  margin-right: 15px;
+}
+
+.cuto {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: orange;
+  align-self: flex-star;
+  margin-bottom: 125px;
+  margin-left: -50px;
+  transform: rotate(-20deg);
+  border-bottom: solid 5px black;
+}
+.cuto::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background: orange;
+  transform: rotate(20deg);
+  margin-left: 182px;
+  margin-top: 40px;
+}
+.cuto::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  background: orange;
+  transform: rotate(20deg);
+  margin-top: 202px;
+  margin-left: 15px;
+}
+
+.boca {
+  width: 45px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  border: 5px solid black;
+  background: red;
+  align-self: center;
+  margin-top: 100px;
+  margin-left: -225px;
+}
+
+.boca::before {
+  content: "";
+  position: absolute;
+  background: orange;
+  border: 5px solid black;
+  width: 50px;
+  height: 75px;
+  border-radius: 50%;
+  transform: rotate(20deg);
+  clip-path: circle(80% at 20% 100%);
+  margin-left: -25px;
+  margin-top: -10px;
+}
+.boca::after {
+  content: "";
+  position: absolute;
+  background: orange;
+  width: 50px;
+  height: 75px;
+  border-radius: 50%;
+  border: 5px solid black;
+  align-self: center;
+  margin-top: -15px;
+  transform: rotate(-20deg);
+  margin-left: 10px;
+}
+.corte {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  background: orange;
+  align-self: center;
+  margin-left: -200px;
+  margin-top: 50px;
+}
+.body {
+  position: absolute;
+  width: 250px;
+  height: 300px;
+  background: orange;
+  border: 5px solid black;
+  left: 150px;
+}
+
+.pnariz {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: rgb(233, 233, 233);
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: -550px;
+}
+
+.rnariz {
+  width: 200px;
+  height: 150px;
+  border: 5px solid black;
+  background-color: rgb(233, 233, 233);
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  align-items: baseline;
+  margin-left: 200px;
+}
+
+.rnariz::before {
+  content: "";
+  position: absolute;
+  border: 5px solid black;
+  background-color: rgb(233, 233, 233);
+  width: 50px;
+  height: 50px;
+  margin-left: 260px;
+  margin-top: -5px;
+}
+
+.centronariz {
+  width: 250px;
+  height: 110px;
+  background-color: rgb(233, 233, 233);
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  margin-top: 15px;
+}
+
+.puntnariz {
+  position: absolute;
+  border: 5px solid black;
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  background-color: rgb(233, 233, 233);
+  margin-left: -60px;
+  margin-top: -5px;
+}
+
+.upcurt {
+  width: 200px;
+  height: 15px;
+  margin-top: -19px;
+  margin-left: 55px;
+
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  align-content: center;
+}
+
+.upcurt > .pt1 {
+  width: 5px;
+  height: 15px;
+  background-color: black;
+}
+
+.downcurt {
+  width: 125px;
+  height: 20px;
+  margin-top: 116px;
+  margin-left: 55px;
+
+  position: relative;
+  justify-content: space-around;
+  display: flex;
+  align-content: center;
+}
+
+.downcurt > .pt1 {
+  width: 5px;
+  height: 20px;
+  background-color: black;
+}
+
+.circp ~ .pt1 {
+  width: 5px;
+  height: 20px;
+  position: absolute;
+  background-color: black;
+}
+
+#t1 {
+  margin-top: -140px;
+  transform: rotate(-45deg);
+  margin-left: 15px;
+}
+
+#t2 {
+  margin-top: -100px;
+  transform: rotate(-75deg);
+  margin-left: -10px;
+}
+
+#t3 {
+  margin-top: -50px;
+  transform: rotate(45deg);
+  margin-left: -5px;
+}
+
+#t4 {
+  margin-top: -22px;
+  transform: rotate(45deg);
+  margin-left: 25px;
+}
+.cuchias {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.cuchias > .chans {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(233, 233, 233);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+#d1 {
+  margin-top: -197px;
+  margin-left: 200px;
+  clip-path: polygon(30% 0%, 0% 100%, 100% 100%);
+}
+#d2 {
+  margin-top: -197px;
+  margin-left: 100px;
+  clip-path: polygon(70% 0%, 0% 100%, 100% 100%);
+}
+#d3 {
+  margin-top: -165px;
+  margin-left: -25px;
+  clip-path: polygon(0% 0%, 40% 100%, 90% 50%);
+}
+#d4 {
+  margin-top: -38px;
+  margin-left: -25px;
+  clip-path: polygon(22% 0%, 0% 100%, 100% 78%);
+}
+
+#d5 {
+  margin-left: 100px;
+  margin-top: 2px;
+  clip-path: polygon(0% 0%, 50% 100%, 100% 0%);
+}
+
+.finalcoutout::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: orange;
+  position: absolute;
+  clip-path: circle(54% at 0 0);
+  margin-top: -162px;
+  margin-left: 175px;
+}
+
+.finalcoutout::before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  background-color: orange;
+  margin-top: -40px;
+  margin-left: 186px;
+}
+
+.pata1 {
+  width: 60px;
+  height: 150px;
+  transform: rotate(30deg);
+  position: absolute;
+  background-color: black;
+  margin-left: -450px;
+  margin-top: 280px;
+  border-radius: 0% 0% 100% 100% / 0% 0% 100% 100%;
+}
+
+.pata2 {
+  width: 60px;
+  height: 150px;
+  transform: rotate(30deg);
+  position: absolute;
+  background-color: black;
+  margin-left: -410px;
+  margin-top: 280px;
+  border-radius: 0% 0% 100% 100% / 0% 0% 100% 100%;
+}
+
+.pata1::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 140px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: orange;
+  border-radius: 0% 0% 100% 100% / 0% 0% 100% 100%;
+}
+
+.pata2::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 140px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: orange;
+  border-radius: 0% 0% 100% 100% / 0% 0% 100% 100%;
+}
+
+.pata1::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 100px;
+  margin-top: -5px;
+  margin-left: -25px;
+  border: 5px solid black;
+  background-color: orange;
+  clip-path: circle(50% at 25% 50%);
+  border-radius: 50%;
+}
+
+.pata2::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 100px;
+  margin-top: -25px;
+  margin-left: -25px;
+  border: 5px solid black;
+  background-color: orange;
+  border-radius: 50%;
+  clip-path: circle(50% at 20% 50%);
+}
+
+.cutoutpatdel {
+  width: 50px;
+  height: 50px;
+  background: orange;
+  position: absolute;
+  margin-left: -376px;
+  margin-top: 280px;
+  transform: rotate(30deg);
+}
+
+.pata3 {
+  width: 60px;
+  height: 170px;
+  transform: rotate(55deg);
+  position: absolute;
+  background-color: black;
+  margin-left: -220px;
+  margin-top: 270px;
+  border-radius: 0% 100% 100% 100% / 0% 100% 100% 100%;
+}
+
+.pata4 {
+  width: 60px;
+  height: 150px;
+  transform: rotate(40deg);
+  position: absolute;
+  background-color: black;
+  margin-left: -210px;
+  margin-top: 280px;
+  border-radius: 0% 100% 100% 100% / 0% 100% 100% 100%;
+}
+
+.pata3::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 160px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: orange;
+  border-radius: 0% 100% 100% 100% / 0% 100% 100% 100%;
+}
+
+.pata4::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 140px;
+  margin-top: 5px;
+  margin-left: 5px;
+  background-color: orange;
+  border-radius: 0% 100% 100% 100% / 0% 100% 100% 100%;
+}
+
+.pata4::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -75px;
+  border: 5px solid black;
+  background-color: orange;
+  border-radius: 50%;
+  clip-path: circle(50% at 40% 70%);
+}
+.lastdiv {
+  position: absolute;
+  width: 40px;
+  height: 100px;
+  background: orange;
+  margin-top: 242px;
+  margin-left: -163px;
+  transform: rotate(45deg);
+}
